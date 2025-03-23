@@ -12,47 +12,64 @@
 </head>
 <body class="m-0 p-0 bg-[#61615a] text-white">
     
-    <header class="flex w-[1146px] h-[47px] pt-3 pl-30 top-[33px]  justify-center">
-
-        <nav class="flex justify-between p-3 items-center  w-[1000px] h-[47px]">
+    <header class="flex w-full h-[47px] pt-3 px-5 md:px-10 lg:px-20 top-[33px] justify-center">
+        <nav class="flex justify-between items-center w-full max-w-[1146px] h-[47px]">
             <h1 class="text-3xl font-extrabold tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-[#FF9142] to-[#FF4E42] drop-shadow-lg">
                 NAINO
             </h1>
-            
-            <div class="flex space-x-5 items-center ">
-                <a  class="h-[17px] opacity-50 cursor-pointer text-white text-sm font-[Rubik] hover:opacity-100 hover:text-[#FF9142] transition duration-300">HOME</a>
+    
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex space-x-5 items-center">
+                <a class="h-[17px] opacity-50 cursor-pointer text-white text-sm font-[Rubik] hover:opacity-100 hover:text-[#FF9142] transition duration-300">HOME</a>
                 <a href="./About.html" class="h-[17px] opacity-50 cursor-pointer text-white text-sm font-[Rubik] hover:opacity-100 hover:text-[#FF9142] transition duration-300">ABOUT ME</a>
-                <a href="./work.html"  class="h-[17px] opacity-50 cursor-pointer text-white text-sm font-[Rubik] hover:opacity-100 hover:text-[#FF9142] transition duration-300">MY WORKS</a>
-
-                <button class=" bg-black rounded-xl px-5 cursor-pointer py-2 font-semibold opacity-70 text-[11px] hover:bg-transparent hover:border-1 hover:border-[#FF9142] "><a href="./Contact.html">CONTACT</a></button>
+                <a href="./work.html" class="h-[17px] opacity-50 cursor-pointer text-white text-sm font-[Rubik] hover:opacity-100 hover:text-[#FF9142] transition duration-300">MY WORKS</a>
+                <button class="bg-black rounded-xl px-5 cursor-pointer py-2 font-semibold opacity-70 text-[11px] hover:bg-transparent hover:border hover:border-[#FF9142]">
+                    <a href="./Contact.html">CONTACT</a>
+                </button>
             </div>
+    
+            <!-- Mobile Menu (Hamburger) -->
+            <button class="md:hidden text-white text-2xl">
+                ☰
+            </button>
         </nav>
- </header>
+    </header>
+    
 
-    <section class="flex flex-col mt-2 justify-center items-center h-110">
-            <h1 class="text-3xl font-[syne] text-center sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">ADAPTIVE &nbsp; LOGO &nbsp; DESIGN</h1>
-            <h1 class="text-3xl font-[syne] text-center sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tigh">  FOR&nbsp; YOUR&nbsp; BRAND</h1>
-         
-            <button class="bg-[#FF9142] font-[Rubik] cursor-pointer mt-25 text-white px-5 py-2 rounded-full mt-5 hover:bg-transparent border-1 border-[#FF9142]"><a href="./work.html">EXPLORE WORKS -></a></button>
-     </section>
+    <section class="flex flex-col justify-center items-center min-h-[110px] mt-40">
+        <h1 class="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-[syne] text-center font-bold leading-tight">
+            ADAPTIVE&nbsp; LOGO&nbsp; DESIGN
+        </h1>
+        <h1 class="text-xl sm:text-3xl md:text-4xl lg:text-5xl font-[syne] text-center font-bold leading-tight">
+            FOR&nbsp; YOUR&nbsp; BRAND
+        </h1>
+    
+        <button class="bg-[#FF9142] font-[Rubik] cursor-pointer mt-15 text-white px-5 py-2 rounded-full hover:bg-transparent border border-[#FF9142] transition-all duration-300">
+            <a href="./work.html">EXPLORE WORKS →</a>
+        </button>
+    </section>
+    
 
                 <!-- hero -->
 
-     <section class="flex mx-20  h-90 mt-5">
-            <div class=" w-[50%] p-10 flex flex-col items-start">
-                <h1 class="text-4xl font-[syne] " >Let’s get know</h1>
-                <h1 class="text-4xl font-[syne] ">about me closer</h1>
-                <p class="font-[Rubik] mt-10 text-sm ">Aaronn is a New York-based visual designer focusing on branding and visual identity. Her portfolio 
-                    showcases her wide range of work, spanning books, posters and web design.</p>
-
-                <button class="bg-[#FF9142] cursor-pointer font-[Rubik] px-5 py-2  rounded-full mt-15 text-sm hover:bg-transparent border-1 border-[#FF9142]"><a href="./About.html">Discover More About Me</a></button>
-            </div>
-            <div class="w-[50%] ">
-                <div class="flex  items-center justify-center">
-                    <img src="./images/WhatsApp Image 2024-05-10 at 19.35.11_df50bf60.jpg" class="w-[55%] rounded-xl" alt="">
-                </div>
-            </div>
-     </section>
+                <section class="flex flex-wrap md:flex-nowrap mx-5 md:mx-20 min-h-[90px] mt-50 gap-8">
+                    <div class="w-full md:w-[50%] p-5 md:p-10 flex flex-col items-start">
+                        <h1 class="text-3xl md:text-4xl font-[syne]">Let’s get to know</h1>
+                        <h1 class="text-3xl md:text-4xl font-[syne]">about me closer</h1>
+                        <p class="font-[Rubik] mt-6 md:mt-10 text-sm text-gray-300">
+                            Aaronn is a New York-based visual designer focusing on branding and visual identity. Her portfolio 
+                            showcases her wide range of work, spanning books, posters, and web design.
+                        </p>
+                
+                        <button class="bg-[#FF9142] cursor-pointer font-[Rubik] px-5 py-2 rounded-full mt-6 text-sm hover:bg-transparent border border-[#FF9142] transition-all duration-300">
+                            <a href="./About.html">Discover More About Me</a>
+                        </button>
+                    </div>
+                    <div class="w-full md:w-[50%] flex items-center justify-center">
+                        <img src="./images/WhatsApp Image 2024-05-10 at 19.35.11_df50bf60.jpg" class="w-[40%] md:w-[48%] rounded-xl" alt="Profile Image">
+                    </div>
+                </section>
+                
 
      <section class="flex flex-col items-center mt-30">
             <h1 class="text-4xl font-[syne] ">My Projects Highlight</h1>
@@ -128,55 +145,64 @@
         </section>
 
         <!-- Testimonial -->
-         <section class="w-full h-[419.72px] mt-40 flex justify-center px-22">
-            <div class="w-[70%] p-10 flex flex-col items-start">
-                    <h1 class="text-5xl font-[syne] "> Testimonial</h1>
-                    <p class="font-[Rubik] text-[14px] mt-11 opacity-70">“Aaronn was fantastic to work with from start to finish. We were looking for
-                         a simple, stand-out logo and he delivered. I tried designing the logo myself 
-                         thinking I wouldn’t need to pay the money for a professional graphic designer but I
-                          was very wrong. Working with Aaronn was worth every penny and was surprisingly affordable! 
-                          I remember him saying simplicity is key to a successful logo and boy he was right. I can’t
-                           thank Aaronn enough for his effort and
-                         professionalism. I would recommend him to anyone looking for a design!”</p>
-
-                    <h2 class="font-[syne] font-bold mt-7" >-Martin lee</h2>
+         <section class="w-full max-w-[1200px] mx-auto h-auto mt-40 flex flex-col md:flex-row justify-center items-start px-6 md:px-12 lg:px-22">
+            <!-- Left Text Section -->
+            <div class="w-full md:w-[60%] p-6 md:p-10 flex flex-col items-start flex-grow">
+                <h1 class="text-4xl md:text-5xl font-[syne]">Testimonial</h1>
+                <p class="font-[Rubik] text-[14px] mt-6 md:mt-11 opacity-70 leading-relaxed">
+                    “Aaronn was fantastic to work with from start to finish. We were looking for
+                    a simple, stand-out logo and he delivered. I tried designing the logo myself 
+                    thinking I wouldn’t need to pay the money for a professional graphic designer but I
+                    was very wrong. Working with Aaronn was worth every penny and was surprisingly affordable! 
+                    I remember him saying simplicity is key to a successful logo and boy he was right. I can’t
+                    thank Aaronn enough for his effort and professionalism. I would recommend him to anyone 
+                    looking for a design!”
+                </p>
+                <h2 class="font-[syne] font-bold mt-6 md:mt-7">- Martin Lee</h2>
             </div>
-
-            <div class=" w-[30%] p-7">
-                <img src="./images/horse.png" alt="">
+        
+            <!-- Right Image Section (Aligned to Bottom) -->
+            <div class="w-full md:w-[40%] p-6 md:p-7 flex justify-center items-end">
+                <img src="./images/horse.png" class="w-[80%] md:w-full max-h-[100px] object-contain self-end rounded-lg" alt="Testimonial Image">
             </div>
-         </section>
+        </section>
+        
 
          <!-- Footer -->
 
-         <footer class="flex font-[syne] flex-col justify-center items-center h-full bg-[#1A1A1A] ">
-            <div class="flex flex-col items-center mt-30">
-                <h1 class="text-2xl font-[syne] font-bold text-[#FF9142]">Get in Touch With Us</h1>
-                <p class="font-[syne] font-bold underline text-[45px]">info@aaronn.com</p>
+         <footer class="flex flex-col justify-center items-center h-auto bg-[#1A1A1A] text-white py-12 px-6">
+            <!-- Contact Section -->
+            <div class="flex flex-col items-center text-center">
+                <h1 class="text-2xl md:text-3xl font-bold text-[#FF9142]">Get in Touch With Us</h1>
+                <p class="font-bold underline text-[32px] md:text-[45px]">info@aaronn.com</p>
             </div>
-
-            <div class="flex items-center justify-between w-full px-30 mt-20">
-                
-                <h1 class="text-4xl font-extrabold  text-transparent bg-clip-text bg-gradient-to-r from-[#FF9142] to-[#FF4E42] drop-shadow-lg">
+        
+            <!-- Footer Navigation -->
+            <div class="flex flex-col md:flex-row items-center justify-between w-full max-w-[1100px] mt-12 px-6 md:px-10">
+                <!-- Brand Logo -->
+                <h1 class="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#FF9142] to-[#FF4E42] drop-shadow-lg">
                     NAINO
                 </h1>
-                
-                <div class="flex flex-col ">
+        
+                <!-- Address & Contact -->
+                <div class="flex flex-col text-center md:text-left mt-6 md:mt-0">
                     <p>Street Avenue 21, CA</p>
                     <p>0-8-00-888-000</p>   
                 </div>
-                <div class="flex flex-col cursor-pointer">
+        
+                <!-- Phone & Social Media -->
+                <div class="flex flex-col items-center md:items-end cursor-pointer mt-6 md:mt-0">
                     <p>+9 0283353</p>
-                    <p><img src="./images/Group 6.png" alt=""></p>
+                    <img src="./images/Group 6.png" class="w-[100px] mt-3" alt="Social Media">
                 </div>
             </div>
-            
         
-            <div class=" p-10">
+            <!-- Footer Bottom -->
+            <div class="w-full max-w-[1100px] text-center mt-12 px-6">
                 <hr class="border-[#FF9142] w-full">
-                <p class="text-[20px] font-[syne] mt-3">© 2023. Ideapeel. All rights reserved.</p>
-                
+                <p class="text-[14px] md:text-[20px] mt-3">© 2023. Ideapeel. All rights reserved.</p>
             </div>
-         </footer>
+        </footer>
+        
 </body>
 </html>
